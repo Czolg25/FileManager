@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <a class="{{ isLinkActive view "home" }}" href="/">Home</a>
+        <a class="{{ isLinkActive view "upload" }}" href="/upload">Upload</a>
+        <a class="{{ isLinkActive view "filemanager" }}" href="/filemanager">File Manager</a>
+    </nav>
+    {{{body}}}
+</body>
+</html>

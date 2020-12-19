@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="preview-big">
+        {{#if (isDisplayable type)}}
+            <object class="{{isPDF type}}" data="/upload/{{name}}" type=""></object>
+        {{else}}
+            No preview
+        {{/if}}
+    </div>
+    <div class="details-big">
+        <p class="detail-big">ID: {{index}}</p>
+        <p class="detail-big">name: {{name}}</p>
+        <p class="detail-big">path: {{path}}</p>
+        <p class="detail-big">size: {{size}}</p>
+        <p class="detail-big">type: {{type}}</p>
+        <p class="detail-big">savedate: {{savedate}}</p>
+    </div>
+</div>

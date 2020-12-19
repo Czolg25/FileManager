@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="preview">
+        {{#if (isDisplayable type)}}
+            <object data="/upload/{{name}}" type=""></object>
+        {{/if}}
+        No preview
+    </div>
+    <div class="details">
+        <img class="ico" src="{{getIcon name}}" alt="">
+        <p>ID: <span class="detail">{{index}}</span></p>
+        <p>Name: <span class="detail">{{name}}</span></p>
+        <p>Size: <span class="detail">{{size}}</span></p>
+        <p>Type: <span class="detail">{{type}}</span></p>
+    </div>
+    <div class="buttons">
+        <a href="/download/{{index}}">
+            <button class="button">
+                Download
+            </button>
+        </a>
+        <a href="/info/{{index}}">
+            <button class="button">
+                Info
+            </button>
+        </a>
+        <a href="/delete/{{index}}">
+            <button class="button">
+                Delete
+            </button>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,187 @@
+:root {
+    --primary-color: rgb(255, 71, 58);
+    --secondary-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--secondary-color);
+    color: white;
+    font-family: 'Open Sans';
+    height: 90vh;
+}
+
+.nav {
+    width: 100%;
+    height: 3em;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 0 3em;
+}
+
+a {
+    margin: 0 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a {
+    font-size: 1.3em;
+    opacity: .7;
+}
+
+.nav a:hover, nav a.active {
+    opacity: 1;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+    font-size: 5em;
+}
+
+form {
+    transform: scale(2);
+}
+
+.button {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.button:hover {
+    transform: translate(3%)
+}
+
+.files {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    margin: auto;
+}
+
+.card {
+    margin: 1em;
+    width: 250px;
+    background: #151515;
+    border-radius: 10px;
+    position: relative;
+}
+
+.preview {
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+}
+
+.preview object {
+    width: 100%;
+    transform: translate(0, -30%);
+}
+
+.preview-big {
+    width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.preview-big object {
+    width: 100%;
+}
+
+object.pdf {
+    height: 100%;
+}
+
+.inactive {
+    display: none;
+}
+
+.details {
+    padding: .8em 2em;
+    margin-bottom: 3em;
+}
+
+.details p {
+    margin: .5em 0;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.detail {
+    font-weight: bold;
+}
+
+.details-big {
+    width: 50%;
+    padding: 1em;
+}
+
+.detail-big {
+    font-weight: bold;
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons a {
+    margin: 0;;
+}
+
+.buttons .button {
+    transition: none;
+    background: rgb(128, 16, 16);
+}
+
+.buttons .button:hover {
+    transform: none;
+}
+
+.alone {
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+.ico {
+    width: 2.5em;
+    float: right;
+    margin-left: 1em;
+}
