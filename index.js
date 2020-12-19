@@ -8,6 +8,8 @@ const data = require('./utils/data');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+process.env.TZ = "Europe/Warsaw";
+
 let index = 0;
 
 app.use(express.static(path.join(__dirname, 'static')));
